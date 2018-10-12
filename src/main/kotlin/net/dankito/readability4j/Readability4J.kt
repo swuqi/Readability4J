@@ -22,7 +22,7 @@ open class Readability4J {
 
     protected val uri: String
 
-    protected val document: Document
+    public val document: Document
 
     protected val options: ReadabilityOptions
 
