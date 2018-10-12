@@ -63,9 +63,9 @@ open class Preprocessor(protected val regEx: RegExUtil = RegExUtil()) : Processo
             val imagesToKeep = ArrayList(images)
 
             images.forEach { image ->
-                if(document.select("img[src=${image.attr("src")}]").size > 0) {
+                //if(document.select("img[src=${image.attr("src")}]").size > 0) {
                     imagesToKeep.remove(image)
-                }
+                //}
             }
 
             return imagesToKeep.size > 0
